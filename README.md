@@ -33,11 +33,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User launches the app and selects **Normal** difficulty (range 1–100, 8 attempts). The secret number is 58.
+2. User enters a guess of **40** and clicks Submit Guess. The game responds: 📈 **Go HIGHER!** — score decreases by 5.
+3. User enters a guess of **80**. The game responds: 📉 **Go LOWER!** — score decreases by 5.
+4. User enters a guess of **60**. The game responds: 📉 **Go LOWER!** — score decreases by 5.
+5. User enters a guess of **55**. The game responds: 📈 **Go HIGHER!** — score decreases by 5.
+6. User enters a guess of **58**. The game responds: 🎉 **Correct!** — balloons appear and a final score is displayed.
+7. User clicks **New Game**. The status resets to "playing", a new secret number is generated, and the guess input is ready for a fresh round.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
