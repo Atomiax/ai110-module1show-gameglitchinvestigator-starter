@@ -26,6 +26,9 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+Ai was able to scan and recognize the source of my errors quickly, suggesting to invert logic for the higher and lower text. After trying ingame it was proven to not work since I needed the logic of the numbers itself to change aswell.
+
+Ai was then able to scan for the logic of the guess in comparison to the actual number and change it. It suggested to redo the logic entirely and when executed it worked out well.
 ---
 
 ## 3. Debugging and testing your fixes
@@ -35,12 +38,13 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
----
+I tested ingame myself, then I used pytest to check the bugs.
+1 test I did was trying to replicate the original bug the got me to an error, like the higher lower messages leading me to go over 100 or under 1. It showed me that my code could have game breaking errors arise from simple logic mistakes. Ai also helped design my test for the guessing logic by producing said test after I prompted it.
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+Streamlit "reruns" are when the code resets back to the beginning after an action, but session states allow your code to remember the state in which your code is at so it doesn't have to rerun all the code over again.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -49,3 +53,6 @@ Document at least 3 bugs you found. Add rows as needed.
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I want to  prompt Ai thoroughly and use an identity when prompting it.
+1 thing I'd do differently is split up my requests for bug fixing to be seperate prompts so the AI can't confuse itself and mess up any of them.
+This project made me realize that AI generated code isn't always reliable and required human intervention to be fully confirmed as both effective and trustworthy. Ai may also not understand logically what you are asking for unless you are specific in your prompts.

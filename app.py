@@ -33,7 +33,7 @@ def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
 
-    try:
+    try: # inverted existing logic using ai
         if guess > secret:
             return "Too High", "📉 Go LOWER!"
         else:
@@ -131,7 +131,7 @@ with col2:
 with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
-if new_game:
+if new_game: #c
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(low, high)
     st.session_state.status = "playing"
@@ -151,7 +151,7 @@ if submit:
 
     ok, guess_int, err = parse_guess(raw_guess)
 
-    if not ok:
+    if not ok: # logic redone after descifying the issue caused
         st.session_state.history.append(raw_guess)
         st.error(err)
     else:
